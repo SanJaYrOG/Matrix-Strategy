@@ -7,8 +7,8 @@ jobs:
       max-parallel: 2
       matrix:
         run: ['run1', 'run2', 'run3']
-     steps:
-     - run: echo Run ${{ matrix.run }}
-     - run: date
-     - run: sleep 5
-     - run: date
+    steps:
+      - run: echo Run ${{ matrix.run }}
+      - run: date
+      - run: sleep 5
+      - run: date
