@@ -7,9 +7,9 @@ jobs:
       matrix:
         run: ['run1', 'run2']
         include:
-        - run: 'run3'
-     steps:
-     - run: echo Run ${{ matrix.run }}
-     - run: date
-     - run: sleep 1
-     - run: date
+          - run: 'run3'
+    steps:
+    - run: echo Run ${{ matrix.run }}
+    - run: date
+    - run: sleep 1
+    - run: date
